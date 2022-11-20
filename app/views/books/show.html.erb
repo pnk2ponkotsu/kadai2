@@ -3,11 +3,11 @@
  <p class="notice text-center" style="color:green;"><%= flash[:notice] %></p></div>
 <% end %>
 
-<h2>タイトル</h2>
+<h2>title</h2>
 <p><%= @book.title %></p>
 
-<h2>感想</h2>
+<h2>body</h2>
 <p><%= @book.body %></p>
 
-<%= link_to "編集", edit_book_path(@book.id) %>
-<%= link_to "戻る", books_path(@book.id) %>
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "back", books_path %>
